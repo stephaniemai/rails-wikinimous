@@ -1,2 +1,4 @@
 <h2><%= @article.title %></h2>
 <%= render 'form', article: @article %>
+<p>(<%= link_to "delete", article_path(@article), method: :delete  %>)</p>
+<p><%= link_to "🔙 Back to the article list", articles_path  %></p>
